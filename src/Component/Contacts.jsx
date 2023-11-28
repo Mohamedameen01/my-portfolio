@@ -22,7 +22,7 @@ function Contacts() {
     }
     
   return (
-    <div id='contacts' className='text-white max-w-[1280px] mx-auto'>
+    <section id='contacts' className='text-white max-w-[1280px] mx-auto'>
         <h1 className="text-center md:text-start capitalize text-xl md:text-2xl m-4">contact me</h1>
         <div className="grid md:grid-cols-2 md:h-[300px]">
             <div className="capitalize text-2xl md:text-3xl lg:text-4xl text-center md:text-start m-4 flex flex-col justify-center md:pl-10 font-bold">
@@ -75,7 +75,7 @@ function Contacts() {
                 <button type='submit' className=' text-white bg-orange-600 w-[35%] mx-auto  py-1 font-medium'>Submit</button>
             </form>
         </div>
-    </div>
+    </section>
   )
 }
 

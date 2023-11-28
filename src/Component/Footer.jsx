@@ -6,7 +6,7 @@ function Footer() {
   return (
     <div className='w-full p-5 bg-gray-950  mx-auto text-center text-white'>
         <h1 className='p-3'>Mohamed Ameen</h1>
-        <a href="https://www.linkedin.com/in/mohamed-ameen-319b31228" rel="noreferrer" target='_blank'>
+        <a href="https://www.linkedin.com/in/mohamed-ameen-tp" rel="noreferrer" target='_blank'>
           <LinkedInIcon className='mr-3 cursor-pointer hover:scale-105 shadow-md shadow-slate-600'/>
         </a>
         <a href='https://github.com/Mohamedameen01' rel="noreferrer" target='_blank'>

@@ -5,7 +5,7 @@ import Registration from '../assets/registration.jpg'
 
 function Projects() {
   return (
-    <div id='projects' className='text-white mx-auto max-w-[1280px] p-3'>
+    <section id='projects' className='text-white mx-auto max-w-[1280px] p-3'>
         <h1 className='text-center md:text-start capitalize text-xl md:text-2xl m-4'>My Works</h1>
         <div className="grid md:grid-cols-3 xl:grid-cols-3">
             <div className="md:w-[240px] lg:w-[300px] xl:w-[400px] p-4 box-border ">
@@ -27,7 +27,7 @@ function Projects() {
                 </a>
             </div>
         </div>
-    </div>
+    </section>
   )
 }
 

@@ -15,9 +15,9 @@ function Navbar() {
     }
 
   return (
-    <div className='flex justify-between items-center mx-auto pl-2 pr-2 max-w-[1280px] h-16 text-white '>
+    <header className='sticky top-[1px] flex justify-between items-center mx-auto pl-2 pr-2 max-w-[1280px]  h-16 text-white '>
         <h1 className={'text-[#00df9a] text-xl md:text-2xl font-bold uppercase'}>Mohamed Ameen</h1>
-        <ul className='uppercase hidden md:flex gap-3 mr-2 text-lg font-medium cursor-pointer'>
+        <ul className='uppercase hidden md:flex  gap-3 mr-2 text-lg font-medium cursor-pointer'>
             <li className='hover:border-b-2 pb-1'>
                 <Link activeClass="active" to="home" spy={true} smooth={true}>
                     home
@@ -42,7 +42,7 @@ function Navbar() {
         <div onClick={handleNav} className='block md:hidden'>
             {!nav ? <CiMenuKebab size={20}/> : <IoMdClose  size={20}/> }
         </div>      
-        <div className={nav ? 'fixed md:hidden top-0 left-0 w-60% border-r-2 border-gray-900 h-full ease-in-out duration-200 text-white' : 'fixed left-[-100%] ease-in-out duration-300'}>
+        <nav className={nav ? 'fixed md:hidden top-0 left-0 w-60% border-r-2 border-gray-900 h-full ease-in-out duration-200 text-white z-10' : 'fixed left-[-100%] ease-in-out duration-300'}>
             <h1 className='opacity-0 w-full m-2 mt-4 text-[#00df9a] text-xl md:text-2xl font-bold uppercase'>Mohamed Ameen</h1>
             <ul className='uppercase mr-2 text-lg font-medium cursor-pointer'>
                 <li className='p-4  border-b border-gray-800'>
@@ -66,8 +66,8 @@ function Navbar() {
                     </Link>
                 </li>
             </ul>
-        </div>
-    </div>
+        </nav>
+    </header>
   )
 }
 
